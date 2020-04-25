@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Interactive quest</string>
+    <string name="choose">Choose your way</string>
+    <string name="left">Go left</string>
+    <string name="right">Go right</string>
+    <string name="up">Go up</string>
+    <string name="down">Go down</string>
+    <string name="new_game">New game</string>
+    <string name="help">Help</string>
+    <string name="about">About</string>
+    <string name="contacts">Contacts</string>
+    <string name="search">Search</string>
+    <string name="actor">Protagonist</string>
+    <string-array name="stringList">
+        <item>First</item>
+        <item>Second</item>
+        <item>Third</item>
+        <item>Fourth</item>
+        <item>Fifth</item>
+        <item>Sixth</item>
+    </string-array>
+    <string name="comein">Come in</string>
+    <string name="back">Back</string>
+    <string name="media_url_mp3" translatable="false">https://storage.googleapis.com/exoplayer-test-media-0/Jazz_In_Paris.mp3</string>
+    <string name="media_url_mp4" translatable="false">https://storage.googleapis.com/exoplayer-test-media-0/BigBuckBunny_320x180.mp4</string>
+    <string name="videoURI_mp4" translatable="false">http://techslides.com/demos/sample-videos/small.mp4</string>
+</resources>
