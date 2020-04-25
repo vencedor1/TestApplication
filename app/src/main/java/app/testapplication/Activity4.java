@@ -46,10 +46,12 @@ public class Activity4 extends AppCompatActivity
 	}
 
 	public void watchTV(View view) {
+		PlayerActivity.URL = R.string.mp4_video1;
 		startActivity(new Intent(this, PlayerActivity.class));
 	}
 
 	public void comeAndWatchTV(View view) {
+		PlayerActivity.URL = R.string.mp4_video2;
 		startActivity(new Intent(this, PlayerActivity.class));
 	}
 }

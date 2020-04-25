@@ -3,13 +3,12 @@ package app.testapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
 import com.google.android.exoplayer2.ExoPlayerFactory;
+import com.google.android.exoplayer2.Player;
 import com.google.android.exoplayer2.ui.PlayerView;
 import com.google.android.exoplayer2.SimpleExoPlayer;
 import com.google.android.exoplayer2.source.ConcatenatingMediaSource;
@@ -18,6 +17,8 @@ import com.google.android.exoplayer2.source.ProgressiveMediaSource;
 import com.google.android.exoplayer2.upstream.DataSource;
 import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
 import com.google.android.exoplayer2.util.Util;
+
+import java.net.URI;
 
 /**
  * https://exoplayer.dev/
@@ -29,7 +30,7 @@ public class PlayerActivity extends AppCompatActivity
 	private boolean playWhenReady = true;
 	private int currentWindow = 0;
 	private long playbackPosition = 0;
-	public static String URL = "";
+	public static int URL = R.string.mp4_video1;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -77,7 +78,7 @@ public class PlayerActivity extends AppCompatActivity
 		player = ExoPlayerFactory.newSimpleInstance(this);
 		playerView.setPlayer(player);
 
-		Uri uri = Uri.parse(getString(R.string.videoURI_mp4));
+		Uri uri = Uri.parse(getString(URL));
 		MediaSource mediaSource = buildMediaSource(uri);
 
 		player.setPlayWhenReady(playWhenReady);
@@ -125,4 +126,6 @@ public class PlayerActivity extends AppCompatActivity
 				                                 | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
 				                                 | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
 	}
+	//// TODO: 25.04.2020 - Run phoneActivity of mp4_video2 playback finished
+
 }

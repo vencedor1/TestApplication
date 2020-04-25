@@ -21,7 +21,11 @@
     </string-array>
     <string name="comein">Come in</string>
     <string name="back">Back</string>
-    <string name="media_url_mp3" translatable="false">https://storage.googleapis.com/exoplayer-test-media-0/Jazz_In_Paris.mp3</string>
-    <string name="media_url_mp4" translatable="false">https://storage.googleapis.com/exoplayer-test-media-0/BigBuckBunny_320x180.mp4</string>
-    <string name="videoURI_mp4" translatable="false">http://techslides.com/demos/sample-videos/small.mp4</string>
+    <string name="mp3_url" translatable="false">https://storage.googleapis.com/exoplayer-test-media-0/Jazz_In_Paris.mp3</string>
+    <string name="mp4_video1" translatable="false">https://www.radiantmediaplayer.com/media/bbb-360p.mp4</string>
+    <string name="mp4_video2" translatable="false">http://techslides.com/demos/sample-videos/small.mp4</string>
+    <string name="mp4_video3" translatable="false">https://d2qguwbxlx1sbt.cloudfront.net/TextInMotion-VideoSample-576p.mp4</string>
+    <string name="mp4_video4" translatable="false">https://file-examples.com/wp-content/uploads/2017/04/file_example_MP4_640_3MG.mp4</string>
+    <string name="mp4_video5" translatable="false">http://mirrors.standaloneinstaller.com/video-sample/dolbycanyon.mp4</string>
+    <string name="mp4_video6" translatable="false">http://mirrors.standaloneinstaller.com/video-sample/DLP_PART_2_768k.mp4</string>
 </resources>
