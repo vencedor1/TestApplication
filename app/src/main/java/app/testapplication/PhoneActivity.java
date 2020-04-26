@@ -38,6 +38,7 @@ public class PhoneActivity extends AppCompatActivity
 				Log.d("ListClick", "itemClick: position = " + (PhoneActivity.position = position) + ", id = " + id);
 			}
 		});
+		// findViewById(R.id.helpImageView).setVisibility(Common.showHelp ? View.VISIBLE : View.INVISIBLE);
 	}
 
 	public void callClick(View view) {
@@ -48,7 +49,7 @@ public class PhoneActivity extends AppCompatActivity
 			PlayerActivity.URL = R.string.mp4_video4;
 			listView.setVisibility(View.INVISIBLE);
 			findViewById(R.id.phonePerson).setVisibility(View.VISIBLE);
-			((ImageButton)findViewById(R.id.imageButtonLeft)).setImageResource(R.drawable.call2);
+			((ImageButton) findViewById(R.id.imageButtonLeft)).setImageResource(R.drawable.call2);
 			try {
 				Thread.sleep(500);
 			} catch (InterruptedException e) {
@@ -64,7 +65,8 @@ public class PhoneActivity extends AppCompatActivity
 								public void run() {
 									do {
 									} while (Common.isWaiting);
-									startActivity(new Intent(context, AgreementActivity.class));								}
+									startActivity(new Intent(context, AgreementActivity.class));
+								}
 							}
 					).start();
 		} else {
@@ -87,4 +89,6 @@ public class PhoneActivity extends AppCompatActivity
 //			finish();
 		}
 	}
+
+
 }

@@ -10,6 +10,7 @@ public final class Common
 {
 	public static int nextScreen = 0;
 	public static boolean isWaiting = false;
+	public static boolean showHelp = false;
 /*
 	public static void playVideo(Context context)
 	{

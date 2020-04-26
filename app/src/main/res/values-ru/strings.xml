@@ -17,4 +17,6 @@
     <string name="callItem">Позвоните Billy Bones</string>
     <string name="agreementTaken">Соглашение принято</string>
     <string name="takeAgreement">Принять</string>
+    <string name="buttonExit">Выход</string>
+    <string name="task_details">Детали задания</string>
 </resources>

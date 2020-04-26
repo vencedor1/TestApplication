@@ -21,19 +21,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <!--
-             The API key for Google Maps-based APIs is defined as a string resource.
-             (See the file "res/values/google_maps_api.xml").
-             Note that the API key is linked to the encryption key used to sign the APK.
-             You need a different API key for each encryption key, including the release key that is used to
-             sign the APK for publishing.
-             You can define the keys for the debug and release targets in src/debug/ and src/release/.
-        -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name=".PhoneActivity"></activity>
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"></activity>
+        <activity android:name=".PhoneSchedulerActivity">
+
+        </activity>
+        <activity android:name=".SocialNetActivity"></activity>
+        <activity android:name=".PhoneActivity" />
         <activity
             android:name=".PlayerActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
@@ -42,16 +41,15 @@
             android:theme="@style/PlayerTheme"
             tools:ignore="LockedOrientationActivity" />
         <activity android:name=".HelpActivity" />
-        <activity android:name=".Activity4"></activity>
+        <activity android:name=".Activity4" />
         <activity android:name=".Main2Activity" />
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".AgreementActivity">
+        <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".AgreementActivity"></activity>
     </application>
 
 </manifest>

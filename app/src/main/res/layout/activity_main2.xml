@@ -57,11 +57,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewCenter"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPerson"
         app:srcCompat="@drawable/bowl" />
 
     <ImageView
-        android:id="@+id/imageViewCenter"
+        android:id="@+id/imageViewPerson"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginStart="8dp"

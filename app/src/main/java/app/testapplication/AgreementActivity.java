@@ -10,6 +10,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.exoplayer2.scheduler.Scheduler;
+
 public class AgreementActivity extends AppCompatActivity
 {
 	MultiAutoCompleteTextView multiAutoCompleteTextView;
@@ -19,7 +21,7 @@ public class AgreementActivity extends AppCompatActivity
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_agreement);
 
-		multiAutoCompleteTextView = findViewById(R.id.TextViewAgreement);
+		multiAutoCompleteTextView = findViewById(R.id.TextViewTask1);
 		multiAutoCompleteTextView.clearComposingText();
 		String[] items = getResources().getStringArray(R.array.agreement);
 		String lines = "";
@@ -43,9 +45,8 @@ public class AgreementActivity extends AppCompatActivity
 							public void run() {
 								do {
 								} while (Common.isWaiting);
-								startActivity(new Intent(context, PhoneActivity.class));
-/*								MapsActivity map = new MapsActivity();
-								setContentView(R.layout.activity_maps);*/
+								Common.showHelp = true;
+								startActivity(new Intent(context, PhoneSchedulerActivity.class));
 							}
 						}
 				).start();

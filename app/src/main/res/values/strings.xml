@@ -55,5 +55,7 @@
     <string name="callItem">Call Billy Bones</string>
     <string name="takeAgreement">Agree</string>
     <string name="agreementTaken">Agreement taken</string>
+    <string name="buttonExit">Exit</string>
+    <string name="task_details">Task details</string>
     <string name="title_activity_maps">Map</string>
 </resources>
