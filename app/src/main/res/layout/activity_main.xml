@@ -16,10 +16,10 @@
         android:textSize="36sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/phonePerson" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/phonePerson"
         android:layout_width="405dp"
         android:layout_height="398dp"
         android:onClick="click"

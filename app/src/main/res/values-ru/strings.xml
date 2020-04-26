@@ -13,5 +13,8 @@
     <string name="search">Поиск</string>
     <string name="actor">Протагонист</string>
     <string name="back">Назад</string>
-    <string name="comein">Войти</string>
+    <string name="comein">Войти...</string>
+    <string name="callItem">Позвоните Billy Bones</string>
+    <string name="agreementTaken">Соглашение принято</string>
+    <string name="takeAgreement">Принять</string>
 </resources>

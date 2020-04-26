@@ -73,7 +73,7 @@
         app:layout_constraintStart_toEndOf="@+id/button4" />
 
     <ListView
-        android:id="@+id/listView"
+        android:id="@+id/listView1"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
         android:layout_marginStart="4dp"
@@ -81,9 +81,7 @@
         android:layout_marginEnd="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -96,18 +94,32 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listView"
+        app:layout_constraintTop_toBottomOf="@+id/listView1"
         app:srcCompat="@drawable/tv" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/buttonComeIn"
+        android:layout_width="213dp"
+        android:layout_height="90dp"
         android:layout_marginTop="16dp"
-        android:text="@string/comein"
         android:onClick="comeAndWatchTV"
+        android:text="@string/comein"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Watch..."
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/listView1"
+        app:layout_constraintVertical_bias="0.652" />
 </androidx.constraintlayout.widget.ConstraintLayout>

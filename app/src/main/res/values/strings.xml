@@ -19,13 +19,41 @@
         <item>Fifth</item>
         <item>Sixth</item>
     </string-array>
-    <string name="comein">Come in</string>
+    <string-array name="phoneBook">
+        <item>Jim Hawkins: +1234567890</item>
+        <item>Dr. David Livesey: +2234567890</item>
+        <item>Long John Silver: +3234567890</item>
+        <item>Captain Alexander Smollett: +4234567890</item>
+        <item>Squire John Trelawney: +51234567890</item>
+        <item>Billy Bones: +6234567890</item>
+        <item>Blind Pew: +9234567890</item>
+        <item>Benjamin "Ben" Gunn: +7234567890</item>
+        <item>Job Anderson: +8234567890</item>
+    </string-array>
+    <string-array name="agreement">
+        <item>Agreement</item>
+        <item></item>
+        <item>1. Lorem ipsum sit dolor</item>
+        <item>2. Lorem ipsum sit dolor</item>
+        <item>3. Lorem ipsum sit dolor</item>
+        <item>4. Lorem ipsum sit dolor</item>
+        <item>5. Lorem ipsum sit dolor</item>
+        <item></item>
+        <item>   Sign</item>
+    </string-array>
+    <string name="comein">Come in ...</string>
     <string name="back">Back</string>
     <string name="mp3_url" translatable="false">https://storage.googleapis.com/exoplayer-test-media-0/Jazz_In_Paris.mp3</string>
     <string name="mp4_video1" translatable="false">https://www.radiantmediaplayer.com/media/bbb-360p.mp4</string>
-    <string name="mp4_video2" translatable="false">http://techslides.com/demos/sample-videos/small.mp4</string>
-    <string name="mp4_video3" translatable="false">https://d2qguwbxlx1sbt.cloudfront.net/TextInMotion-VideoSample-576p.mp4</string>
-    <string name="mp4_video4" translatable="false">https://file-examples.com/wp-content/uploads/2017/04/file_example_MP4_640_3MG.mp4</string>
-    <string name="mp4_video5" translatable="false">http://mirrors.standaloneinstaller.com/video-sample/dolbycanyon.mp4</string>
-    <string name="mp4_video6" translatable="false">http://mirrors.standaloneinstaller.com/video-sample/DLP_PART_2_768k.mp4</string>
+    <string name="mp4_video2" translatable="false">http://study.cc.ua/files/video/Butterfly.mp4</string>
+    <string name="mp4_video3" translatable="false">https://d2qguwbxlx1sbt.cloudfront
+        .net/TextInMotion-VideoSample-576p.mp4</string>
+    <string name="mp4_video4" translatable="false">http://techslides.com/demos/sample-videos/small.mp4</string>
+    <string name="mp4_video5" translatable="false">https://file-examples.com/wp-content/uploads/2017/04/file_example_MP4_640_3MG.mp4</string>
+    <string name="mp4_video6" translatable="false">http://mirrors.standaloneinstaller.com/video-sample/dolbycanyon.mp4</string>
+    <string name="mp4_video7" translatable="false">http://mirrors.standaloneinstaller.com/video-sample/DLP_PART_2_768k.mp4</string>
+    <string name="callItem">Call Billy Bones</string>
+    <string name="takeAgreement">Agree</string>
+    <string name="agreementTaken">Agreement taken</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

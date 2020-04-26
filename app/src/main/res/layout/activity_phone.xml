@@ -7,55 +7,39 @@
     tools:context=".PhoneActivity">
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="248dp"
-        android:layout_height="220dp"
+        android:id="@+id/phonePerson"
+        android:layout_width="314dp"
+        android:layout_height="379dp"
         android:layout_marginTop="8dp"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/phone" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="170dp"
-        android:layout_height="187dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:srcCompat="@drawable/person" />
+        app:layout_constraintTop_toTopOf="@+id/listView1"
+        app:srcCompat="@drawable/pirate" />
 
     <ImageButton
         android:id="@+id/imageButtonLeft"
         android:layout_width="150dp"
         android:layout_height="129dp"
-        android:layout_marginTop="22dp"
-        android:rotation="45"
-        android:scaleType="centerInside"
+        android:layout_marginTop="56dp"
         android:clickable="true"
-        android:onClick="leftClick"
-        app:layout_constraintEnd_toStartOf="@+id/imageButtonRight"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:srcCompat="@drawable/bowl" />
-
-    <ImageButton
-        android:id="@+id/imageButtonRight"
-        android:layout_width="150dp"
-        android:layout_height="129dp"
-        android:layout_marginTop="22dp"
-        android:layout_marginBottom="36dp"
-        android:rotation="135"
+        android:onClick="callClick"
         android:scaleType="centerInside"
-        android:clickable="true"
-        android:onClick="rightClick"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButtonLeft"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:srcCompat="@drawable/bowl" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phonePerson"
+        app:srcCompat="@drawable/call1" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="400dp"
+        android:layout_height="460dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,8 +7,12 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
+import com.google.android.exoplayer2.C;
+import com.google.android.exoplayer2.ExoPlaybackException;
 import com.google.android.exoplayer2.ExoPlayerFactory;
 import com.google.android.exoplayer2.Player;
+import com.google.android.exoplayer2.source.TrackGroupArray;
+import com.google.android.exoplayer2.trackselection.TrackSelectionArray;
 import com.google.android.exoplayer2.ui.PlayerView;
 import com.google.android.exoplayer2.SimpleExoPlayer;
 import com.google.android.exoplayer2.source.ConcatenatingMediaSource;
@@ -30,6 +34,7 @@ public class PlayerActivity extends AppCompatActivity
 	private boolean playWhenReady = true;
 	private int currentWindow = 0;
 	private long playbackPosition = 0;
+	private Player.EventListener playerListener;
 	public static int URL = R.string.mp4_video1;
 
 	@Override
@@ -70,12 +75,12 @@ public class PlayerActivity extends AppCompatActivity
 		if (Util.SDK_INT > 23) {
 			releasePlayer();
 		}
-		finish();
 	}
 
 	@SuppressWarnings("deprecation")
 	private void initializePlayer() {
 		player = ExoPlayerFactory.newSimpleInstance(this);
+		player.addListener(new PlayerEventListener());
 		playerView.setPlayer(player);
 
 		Uri uri = Uri.parse(getString(URL));
@@ -126,6 +131,15 @@ public class PlayerActivity extends AppCompatActivity
 				                                 | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
 				                                 | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
 	}
-	//// TODO: 25.04.2020 - Run phoneActivity of mp4_video2 playback finished
 
+	private class PlayerEventListener implements Player.EventListener
+	{
+		@Override
+		public void onPlayerStateChanged(boolean playWhenReady, @Player.State int playbackState) {
+			if (playbackState == Player.STATE_ENDED) {
+				Common.isWaiting = false;
+				finish();
+			}
+		}
+	}
 }
